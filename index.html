@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+	<body>
+		<div id="main">
+
+			<div class="circle-box">
+				<svg height="402" width="402">
+					<circle r="200"  cx="201" cy="201" stroke-width="1px" stroke="grey" fill="none" />	
+				</svg>
+				<svg height="402" width="402">
+					<circle r="200"  cx="201" cy="201" stroke-width="1px" stroke="white" fill="none" id="svg-circle"/>	
+				</svg>
+				<div>
+					<span id="step1"></span>
+					<span id="step2"></span>
+					<span id="step3"></span>
+					<span id="step4"></span>
+					<span id="step5"></span>
+				</div>
+				<div class="user-box" id="userbox">
+					<div class="user">
+						<img src="image/person-1.jpg" alt="">
+						<h1>Shrau I Really</h1>
+					</div>
+
+					<div class="user">
+						<img src="image/person-2.jpg" alt="">
+						<h1>love U</h1>
+					</div>
+
+					<div class="user">
+						<img src="image/person-3.jpg" alt="">
+						<h1>Mala Maff</h1>
+					</div>
+
+					<div class="user">
+						<img src="image/person-4.jpg" alt="">
+						<h1>Karshil Ka</h1>
+					</div>
+
+					<div class="user">
+						<img src="image/person-5.jpg" alt="">
+						<h1>Love U Bala</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<script>
+			var svgCircle = document.getElementById("svg-circle");
+			var step1 = document.getElementById("step1");
+			var step2 = document.getElementById("step2");
+			var step3 = document.getElementById("step3");
+			var step4 = document.getElementById("step4");
+			var step5 = document.getElementById("step5");
+			var main = document.getElementById("main");
+			var userbox = document.getElementById("userbox");
+
+			main.style.backgroundImage = "url(image/img-1.jpg)";
+
+
+			step1.addEventListener('click', ()=>{
+				svgCircle.style.strokeDashoffset = "1004";
+				main.style.backgroundImage = "url(image/img-2.jpg)";
+				userbox.style.top = "-375px"
+			})
+			step2.addEventListener('click', ()=>{
+				svgCircle.style.strokeDashoffset = "753";
+				main.style.backgroundImage = "url(image/img-3.jpg)";
+				userbox.style.top = "-825px"
+			})
+			step3.addEventListener('click', ()=>{
+				svgCircle.style.strokeDashoffset = "502";
+				main.style.backgroundImage = "url(image/img-4.jpg)";
+				userbox.style.top = "-1275px"
+			})
+			step4.addEventListener('click', ()=>{
+				svgCircle.style.strokeDashoffset = "251";
+				main.style.backgroundImage = "url(image/img-5.jpg)";
+				userbox.style.top = "-1725px"
+			})
+			step5.addEventListener('click', ()=>{
+				svgCircle.style.strokeDashoffset = "0";
+				main.style.backgroundImage = "url(image/img-1.jpg)";
+				userbox.style.top = "80px"
+			})
+
+			
+		</script>
+	</body>
+</html>
+
+
+<!-- 
+115
+350
+800
+1250
+1700 -->
